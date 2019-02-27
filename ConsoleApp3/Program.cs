@@ -10,6 +10,11 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
+            var orderProcessor = new orderProcessor();
+            var order = new Order { DatePlaced = DateTime.Now, ToralPrice = 100f };
+            orderProcessor.process(order);
+
+
         }
     }
 }
